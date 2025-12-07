@@ -163,7 +163,9 @@ Expected:
 
 `trading_engine_service.py`          Converts signals into trades and persists them
 
-### 📡 Step 5 : Subscribe and unsubscribe to Market Data Feeds
+### 📡 Step 5 : Subscribe to Market Data Feeds
+
+Docs: https://bybit-exchange.github.io/docs/v5/market/orderbook
 
 ``` bash
 curl -X POST "http://127.0.0.1:8000/subscribe"   -H "Content-Type: application/json"   -d '{"symbol": "BTCUSDT", "channel": "spot", "matching_key": "a"}'
@@ -173,22 +175,10 @@ curl -X POST "http://127.0.0.1:8000/subscribe"   -H "Content-Type: application/j
 curl -X POST "http://127.0.0.1:8000/subscribe"   -H "Content-Type: application/json"   -d '{"symbol": "BTCPERP", "channel": "linear", "matching_key": "a"}'
 ```
 
-
-
-``` bash
-curl -X POST "http://127.0.0.1:8000/unsubscribe"   -H "Content-Type: application/json"   -d '{"symbol": "BTCUSDT", "channel": "spot", "matching_key": "a"}'
-```
-
-``` bash
-curl -X POST "http://127.0.0.1:8000/unsubscribe"   -H "Content-Type: application/json"   -d '{"symbol": "BTCPERP", "channel": "linear", "matching_key": "a"}'
-```
-
-### 🔑 What is `matching_key`?
+🔑 What is `matching_key`?
 
 Groups instruments for spread comparison (e.g., `"a"` for BTC pair,
 `"b"` for ETH pair).
-
-Docs: https://bybit-exchange.github.io/docs/v5/market/orderbook
 
 ## 🔍 Monitoring & Debugging
 
