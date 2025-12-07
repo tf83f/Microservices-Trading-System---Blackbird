@@ -133,10 +133,15 @@ uv sync
 
 ### Step 3 : Start infrastructure (DB + RabbitMQ)
 
-
-
 ``` bash
 ./setup.sh
+```
+You may have to change permission 
+
+``` bash
+cd ..
+chmod -R 700 Microservices-Trading-System---Blackbird-main
+cd Microservices-Trading-System---Blackbird-main
 ```
 
 Check containers:
