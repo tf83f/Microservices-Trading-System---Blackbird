@@ -1,18 +1,7 @@
 # Microservices Trading System - Blackbird
 
-This repository implements a modular, event-driven trading system
-designed. The system streams market data, generates trading signals, executes
+This repository implements a modular, event-driven trading system. The system streams market data, generates trading signals, executes
 simulated trades, and stores all data for later analysis.
-
-The architecture uses:
-
--   **TimescaleDB** --- time-series storage
--   **RabbitMQ** --- microservice communication
--   **Python microservices**
--   **docker-compose** --- infrastructure orchestration
--   **uv** --- Python environment management
-
-## 🚀 Assignment Context
 
 The assignment requires building a backend system capable of trading
 across two products (e.g., **BTC spot** and **BTC perpetual futures**)
@@ -24,6 +13,15 @@ derivatives data.
 
 This repository provides a structured microservices solution to meet
 those requirements.
+The architecture uses:
+
+-   **TimescaleDB** : time-series storage
+-   **RabbitMQ** : microservice communication
+-   **Python microservices**
+-   **docker-compose** : infrastructure orchestration
+-   **uv** : Python environment management
+
+<img src="./Trading System Architecture.png">
 
 ## 📦 Requirements
 
@@ -216,8 +214,6 @@ Tables:
 Login: `guest / guest`
 
 ## 🧠 Design Highlights
-
-<img src="./Trading System Architecture.png">
 
 ``` bash
     ============================================================
