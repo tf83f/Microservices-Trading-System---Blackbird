@@ -217,8 +217,7 @@ Login: `guest / guest`
 
 ## 🧠 Design Highlights
 
-<img src="./Trading System Architecture
-.png">
+<img src="./Trading System Architecture.png">
 
 ``` bash
     ============================================================
